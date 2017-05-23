@@ -8,8 +8,6 @@
 #CMD java -jar /opt/spring.jar
 FROM openjdk:8
 EXPOSE 8080 8888
-RUN pwd
-RUN mkdir bhawani
-RUN ls
-RUN curl http://172.17.0.11/spring-2.jar -o /bhawani/spring-2.jar
-CMD java -jar /bhawani/spring-2.jar
+RUN mkdir app-dir
+RUN curl http://172.17.0.11/spring-2.jar -o /app-dir/spring-2.jar
+CMD java -jar /app-dir/spring-2.jar
