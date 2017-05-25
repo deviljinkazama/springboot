@@ -9,5 +9,5 @@
 FROM openjdk:8
 EXPOSE 8080 8888
 RUN mkdir shardool
-RUN curl http://172.17.0.11/spring.jar -o /shardool/spring.jar
-CMD java -jar /shardool/spring.jar
+RUN curl http://172.17.0.11/spring-${BUILD_NUMBER}.jar -o /shardool/spring-${BUILD_NUMBER}.jar
+CMD java -jar /shardool/spring-${BUILD_NUMBER}.jar
