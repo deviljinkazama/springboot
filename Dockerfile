@@ -8,6 +8,7 @@
 #CMD java -jar /opt/spring.jar
 FROM openjdk:8
 EXPOSE 8080 8888
+RUN cd /
 RUN pwd
 RUN ls -la
 RUN rm -rf shardool
