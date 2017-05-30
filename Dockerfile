@@ -8,7 +8,7 @@
 #CMD java -jar /opt/spring.jar
 FROM openjdk:8
 EXPOSE 8080 8888
-RUN echo 1st Commit
+RUN echo 2nd Commit
 RUN cd /
 RUN pwd
 RUN ls -la
